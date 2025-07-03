@@ -1,2 +1,2 @@
 # LIPAI_study_guide
-Scientific study group for histological image analysis
+Scientific research group on histological image analysis
