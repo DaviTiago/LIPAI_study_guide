@@ -1,6 +1,6 @@
 """Exercise 02"""
 
-# Solicita as notas em formato "n1, n2, ..., nm" e calcula a média e situação do aluno
+# Solicite ao usuário uma única a vez as notas no formato n1, n2, n3, nm e apresente o resultado da média aritmética das notas se está aprovado(maior que 6.0), recuperação(entre 4.0 e 6.0) ou reprovado(menor que 4.0).
 
 grades_input = input(
     "Digite as notas separadas por vírgula, ex: n1, n2, n3, ..., nm: ")
