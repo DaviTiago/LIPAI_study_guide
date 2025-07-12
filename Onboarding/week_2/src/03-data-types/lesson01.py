@@ -1,80 +1,77 @@
-"""List"""
-# Listas são coleções de dados
-# - Podem conter diferentes tipos de dados
-# - Podem ser modificadas (mutáveis)
-# - Podem ser ordenadas (indexáveis)
-# - Podem ser iteradas (percorridas)
-# - Podem conter duplicatas
-# - Podem ser aninhadas (listas dentro de listas)
-# - Podem ser dinâmicas (crescem e diminuem conforme necessário)
+""" Lists """
 
-# criação da lista
-nomes = ['Maria', 'Pedro', 'João']
-print(nomes, type(nomes))
+# Lists are one of the most commonly used data types in Python.
+# A list is a collection that is:
+# - Ordered (elements have a defined index)
+# - Mutable (can be changed)
+# - Iterable (can be used in loops)
+# - Allows duplicate values
+# - Can hold elements of different data types
+# - Can contain nested lists (lists inside lists)
+# - Dynamically sized (can grow or shrink)
 
-# acessar elementos
-print(nomes[0])
-print(nomes[0:2])
-print(nomes[:2])
-print(nomes[1:])
+# Creating a list
+names = ['Maria', 'Pedro', 'João']
+print("Original list:", names)
+print("Type:", type(names))
 
-# modificar elementos
-nomes[0] = 'Maria da Silva'
-nomes[1:] = ['Pedro da Silva', 'João Santos']
-print(nomes)
+# Accessing elements by index
+print("First name:", names[0])          # Maria
+print("First two names:", names[0:2])   # Maria, Pedro
+print("First two names (simplified):", names[:2])  # Maria, Pedro
+print("From second name onwards:", names[1:])      # Pedro, João
 
+# Modifying elements
+names[0] = 'Maria da Silva'
+names[1:] = ['Pedro da Silva', 'João Santos']
+print("Modified list:", names)
 
-# tamanho de uma lista
-# função len
-tamanho = len(nomes)
-print(tamanho)
+# Getting the length of the list
+size = len(names)
+print("List size:", size)
 
-# adicionar elementos na lista
-# método append
-nomes.append('Marta Gomes')
-print(nomes)
+# Adding elements to the list
 
-# método insert
-nomes.insert(0, 'Guilherme Tavares')
-print(nomes)
+# .append() - adds at the end
+names.append('Marta Gomes')
+print("After append:", names)
 
-nomes.insert(2, 'Ana Lucia')
-print(nomes)
+# .insert(index, element) - inserts at a specific position
+names.insert(0, 'Guilherme Tavares')  # insert at the beginning
+print("After insert at position 0:", names)
 
-# método extend
-nomes2 = ['Kaio Silva', 'Carlos Gomes']
-print(len(nomes))
-nomes.extend(nomes2)
-print(len(nomes))
-print(nomes)
+names.insert(2, 'Ana Lucia')          # insert at position 2
+print("After insert at position 2:", names)
 
-# remover elementos
+# .extend() - add multiple elements from another list
+more_names = ['Kaio Silva', 'Carlos Gomes']
+print("List size before extend:", len(names))
+names.extend(more_names)
+print("List size after extend:", len(names))
+print("After extend:", names)
 
-# método remove
+# Removing elements from the list
 
-nomes.remove('Maria da Silva')
-print(nomes)
+# .remove(value) - removes the first occurrence of the value
+names.remove('Maria da Silva')
+print("After remove:", names)
 
-# del
+# del keyword - remove by index
+del names[0]
+print("After del [0]:", names)
 
-del nomes[0]
-print(nomes)
+# del can also be used to delete the entire list from memory
+# del names
 
-# remove da memória
-# del nomes
-print(nomes)
+# .clear() - removes all elements from the list
+# names.clear()
+print("After clear (commented out):", names)
 
-# limpar a lista
-# método clear
-# nomes.clear()
-print(nomes)
+# Iterating over a list
+print("Iterating with for-in:")
+for name in names:
+    print(name)
 
-
-# iteração em lista
-for nome in nomes:
-    print(nome)
-
-print('----')
-
-for i in range(len(nomes)):
-    print(nomes[i])
+print("Iterating with index:")
+for i in range(len(names)):
+    print(f"Position {i}: {names[i]}")
