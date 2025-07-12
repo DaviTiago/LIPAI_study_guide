@@ -6,10 +6,10 @@ numbers = []
 
 print('Digite 3 números')
 while len(numbers) < 3:
-    entrada = input(f'Number {len(numbers) + 1}: ')
+    entry = input(f'Number {len(numbers) + 1}: ')
     
-    if entrada.replace('.', '').replace('-', '').isdigit():
-        number = float(entrada)
+    if entry.replace('.', '').replace('-', '').isdigit():
+        number = float(entry)
         numbers.append(number)
     else:
         print("Por favor, digite um número válido.")
