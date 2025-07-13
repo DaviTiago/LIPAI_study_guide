@@ -36,14 +36,11 @@ print("Names:", names, "Length:", length)
 
 def greet():
     print("Hello! Welcome to our system.")
-
-
 greet()
 greet()
 
 # Example 2 - With parameter, no return
 # Exemplo 2 - Com parâmetro, sem retorno
-
 
 def greet_user(name):
     print(f"Hello, {name}! Nice to see you.")
