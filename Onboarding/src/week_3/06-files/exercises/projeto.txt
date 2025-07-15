@@ -1,0 +1,4 @@
+123,Predição de quanto tempo um cliente leva para comer 10 hamburgueres, Jõao Torres
+134,Análise de dados de vendas, Ana Paula
+145,Estudo de caso sobre o impacto da pandemia no comércio local, Carlos Souza
+156,Desenvolvimento de um aplicativo de controle financeiro, Beatriz Lima

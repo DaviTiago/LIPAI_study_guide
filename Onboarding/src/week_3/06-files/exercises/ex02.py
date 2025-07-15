@@ -29,3 +29,11 @@ def carregar_dados_projetos(file_name):
             projetos.append(projeto)  
 
     return tuple(projetos)
+
+# LIPAI_study_guide/Onboarding/src/week_3/06-files/exercises/projeto.txt
+path = input("Digite o caminho do arquivo de projetos: ")
+projetos = carregar_dados_projetos(path)
+for projeto in projetos:
+    print(projeto)
+
+    
