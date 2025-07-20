@@ -42,7 +42,9 @@ print("------------------------------------------------")
 # Part 2 - With OOP (using classes and objects)
 
 # Define a class called Rectangle
-
+# Class has attributes: width and height
+# Class has methods: calculate_area and calculate_perimeter (Functions that operate on the object's data)
+# This allows us to encapsulate the data and behavior related to rectangles in a single entity.
 
 class Rectangle:
     # Constructor to initialize width and height
