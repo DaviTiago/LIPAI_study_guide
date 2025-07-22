@@ -1,0 +1,17 @@
+# Ignorar pastas de cache
+__pycache__/
+*.py[cod]
+
+# Ignorar arquivos de ambiente virtual
+env/
+venv/
+
+# Ignorar arquivos de configurações do editor
+.vscode/
+.idea/
+
+# Ignorar arquivos temporários
+*.log
+*.tmp
+*.bak
+.DS_Store
